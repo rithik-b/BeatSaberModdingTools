@@ -18,9 +18,7 @@
   </TemplateData>
   <TemplateContent>
     <Project File="DisableableProjectTemplate.csproj" ReplaceParameters="true" TargetFileName="$safeprojectname$.csproj">
-      <ProjectItem ReplaceParameters="true" OpenInEditor="true" TargetFileName="$safeprojectname$Controller.cs">MonobehaviourTemplate.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" OpenInEditor="true" TargetFileName="Configuration\PluginConfig.cs">PluginConfig.cs</ProjectItem>
-      <ProjectItem ReplaceParameters="true" OpenInEditor="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" OpenInEditor="true">Plugin.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="Directory.Build.targets">Directory.Build.targets.template</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="Directory.Build.props">Directory.Build.props.template</ProjectItem>
