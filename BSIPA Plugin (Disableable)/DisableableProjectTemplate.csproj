@@ -73,13 +73,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<None Include="Plugin.cs" />
-		<None Include="Configuration\PluginConfig.cs" />
-	</ItemGroup>
-
-	<ItemGroup>
-		<None Include="Directory.Build.props" Condition="Exists('Directory.Build.props')"/>
-		<None Include="Directory.Build.targets" Condition="Exists('Directory.Build.targets')"/>
+		<None Include="Directory.Build.props" Condition="Exists('Directory.Build.props')" />
+		<None Include="Directory.Build.targets" Condition="Exists('Directory.Build.targets')" />
 		<None Include="$safeprojectname$.csproj.user" Condition="Exists('$safeprojectname$.csproj.user')" />
 	</ItemGroup>
 	
