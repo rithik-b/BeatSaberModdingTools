@@ -8,6 +8,7 @@ using IPA;
 using IPA.Config;
 using IPA.Config.Stores;
 using UnityEngine;
+using Zenject;
 using IPALogger = IPA.Logging.Logger;
 
 namespace $safeprojectname$
@@ -30,7 +31,7 @@ namespace $safeprojectname$
         /// [Init] methods that use a Constructor or called before regular methods like InitWithConfig.
         /// Only use [Init] with one Constructor.
         /// </summary>
-        public Plugin(IPALogger logger)
+        public Plugin(IPALogger logger, Zenjector zenjector)
         {
             Instance = this;
             Plugin.Log = logger;
@@ -58,7 +59,6 @@ namespace $safeprojectname$
         [OnEnable]
         public void OnEnable()
         {
-            new GameObject("$safeprojectname$Controller").AddComponent<$safeprojectname$Controller>();
             //ApplyHarmonyPatches();
         }
 
@@ -70,8 +70,6 @@ namespace $safeprojectname$
         [OnDisable]
         public void OnDisable()
         {
-            if(PluginController != null)
-                GameObject.Destroy(PluginController);
             //RemoveHarmonyPatches();
         }
 

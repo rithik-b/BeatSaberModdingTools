@@ -57,13 +57,11 @@
     <None Include="csproj.user.template" />
     <None Include="Directory.Build.props.template" />
     <None Include="Directory.Build.targets.template" />
-    <None Include="MonobehaviourTemplate.cs" />
     <None Include="Plugin.cs" />
     <None Include="PluginConfig.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="AssemblyInfo.cs" />
     <None Include="manifest.json" />
     <None Include="DisableableProjectTemplate.csproj" />
   </ItemGroup>
